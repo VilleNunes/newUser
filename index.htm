@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="new-user">
+      <form action="">
+        <h1>Cadastro de Novos Usuarios</h1>
+        <label  for="name">Nome Completo</label>
+        <input required id="name" type="text">
+
+        <label for="email">Email</label>
+        <input required id="email" type="email">
+
+        <label for="password">Senha</label>
+        <input required id="password" type="password">
+
+        <select  name="permision" id="permision">
+          <option  value="" disabled selected>Selecione uma permissão</option>
+          <option value="admin">Administrador</option>
+          <option value="user">Usuário</option>
+          <option value="guest">Visitante</option>
+        </select>
+
+        <input value="Criar novo Usuário" type="submit">
+      </form>
+  </div>
+  <div class="table-user">
+    <h2>Usuários Cadastrados</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>Email</th>
+            <th>Permissão</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+        
+        </tbody>
+      </table>
+  </div>
+  <div id="aviso">
+    <p>O usuário foi cadastrado com sucesso</p>
+  </div>
+
+  <script src="script.js"></script>
+
+
+</body>
+</html>
