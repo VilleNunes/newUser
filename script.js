@@ -24,6 +24,7 @@ function newUser(){
     }
   ];
 
+  
   table.innerHTML += `
      ${newUsers.map(n =>{
                     return `
@@ -39,7 +40,7 @@ function newUser(){
   `
   
   viewPrompt("Novo usuário criado com sucesso..", false);
-  setInterval(hidePrompt, 5000)
+  setInterval(hidePrompt, 9000)
   
  } catch (error) {
   alert("Usuário não cadastrado")
@@ -58,7 +59,7 @@ function deleteUser(id){
   const user = document.getElementById(id);
   user.remove();
   viewPrompt("Usuário foi deletado com sucesso", true);
-  setInterval(hidePrompt, 5000)
+  setInterval(hidePrompt, 9000)
 }
 
 function viewPrompt(mensagem,status){
